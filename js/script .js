@@ -1,29 +1,25 @@
 // vowels.
 
-function noOfVowels(string) {
+function noOfVowels(word) {
     var listOfVowels = 'aAeEiIoOuU';
     var vowelsCount = 0;
-    for(var i = 0; i < string.length ; i++) {
-       if (listOfVowels.indexOf(string[i]) !== -1) {
+    for(var i = 0; i < word.length ; i++) {
+       if (listOfVowels.indexOf(word[i]) !== -1) {
           vowelsCount += 1;
       }
     }
  return vowelsCount;
  }
- document.write(noOfVowels("Tutorix is one of the best e-platforms"));
+console.log(noOfVowels("aeroplane"));
 
 // num to string.
 
-var num = 565;
+var num = 567;
 var reverse = 0; 
-console.log(num);
 
 while(num != 0) {
     reverse = (reverse*10) + (num%10);
     num = parseInt(num / 10)
-}
-
-while (reverse != 0) {
     switch(reverse % 10) {
         case 0:
             console.log("Zero");
@@ -56,5 +52,7 @@ while (reverse != 0) {
             console.log("Nine");
             break;
     }
-    reverse = parseInt(reverse/10);
 }
+
+
+
